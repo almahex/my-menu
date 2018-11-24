@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>MyMenu</title>
+		<meta name="description" content="In this app you can browse, create and edit restaurant menus.">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+	</head>
+	<body>
+		<header>
+			<h1 class="title">MyMenu</h1>
+		</header>
+
+		<main>
+			<img src="/static/restaurant.jpg" alt="Restaurant table">
+			{% with messages = get_flashed_messages() %}
+				{% if messages %}
+				<ul>
+				{% for message in messages %}
+					<li><strong> {{message}} </strong></li>
+				{% endfor %}
+				</ul>
+				{% endif %}
+			{% endwith %}
+
+			</br>
+
+			<h2>Our Restaurants</h2>
+
+			{% for r in restaurants %}
+			<div class="list">
+				<a href="{{url_for('showMenu', restaurant_id=r.id)}}" class="restaurant">{{r.name}}</a>
+				<div class="options">
+					<a href="{{url_for('editRestaurant', restaurant_id=r.id)}}" class="icons edit">edit</a>
+					<a href="{{url_for('deleteRestaurant', restaurant_id=r.id)}}" class="icons cross">⨯</a>
+				</div>
+			</div>
+			{% endfor %}
+
+			<a href = '{{url_for('newRestaurant')}}' class="create">Missing a restaurant?<br>Add it here!</a>
+		</main>
+		<footer>
+			<a class="view-source" href="https://github.com/almahex/my-menu" title="View source for this page on GitHub">View source on GitHub</a>
+      		<p>© Copyright 2018 by Sara Garci. All rights reserved.</p>
+    	</footer>
+	</body>
+
+</html>

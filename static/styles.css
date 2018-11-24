@@ -1,0 +1,218 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000d0f;
+  font-size: 18px;
+  line-height: 1.2em;
+  max-width: 1000px;
+  min-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0; 
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+hr {
+  color:  #e2e2e2;
+}
+
+/* Header */
+
+header {
+  margin: 5em 0 3em;
+  padding: 2em;
+  border-bottom: 2px solid #fd9f15;
+}
+
+.title {
+  text-align: center;
+  font-size: 47px;
+  font-weight: 100;
+}
+
+/* Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  font-weight: 400;
+  margin-bottom: 2em;
+  text-align: center;
+  color: #fd9f15;
+  font-size: 30px;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 3em;
+}
+
+.list {
+  padding: 1em;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.list:nth-child(2n) {
+	background: #e2e2e2;
+}
+
+.restaurant:hover,
+.edit:hover {
+  font-weight: 700;
+}
+
+.restaurant {
+  padding-right: 1em;
+}
+
+.edit {
+  margin-right: 20px;
+}
+
+.cross {
+  font-size: 16px;
+  color: #fd9f15;
+}
+
+.create {
+  text-align: center;
+  margin-top: 2em;
+  color: #fd9f15;
+  line-height: 2em;
+
+}
+
+a.create:hover {
+  color: #9c5e2a;
+}
+
+/* Menu */
+
+.goback {
+  width: 40px;
+}
+
+h3 {
+  font-weight: 400;
+  margin: 1em 0;
+  border-bottom: 1px solid #e2e2e2;
+
+}
+
+.restaurantmenu {
+  margin-top: 1em;
+}
+
+.item {
+  padding: 1em;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item:nth-child(2n) {
+  background: #e2e2e2;
+}
+
+.firstline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+p.name {
+  font-weight: 500;
+}
+
+p.description {
+  font-style: italic;
+}
+
+.thirdline {
+  text-align: right;
+}
+
+.thirdline > .cross:hover {
+  font-weight: 700;
+}
+
+/* Form */
+
+.someinput {
+  border: none;
+  padding: 7px 0 7px 20px;
+  background: #e2e2e2;
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.applychanges {
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+.applychanges:hover {
+  color: #fd9f15;
+  cursor: pointer;
+}
+
+.applychanges {
+  font-size: 18px;
+  color: black;
+  width: 100%;
+  text-align: middle;
+}
+
+/* Menu item */
+
+.identifyfield {
+  margin: 10px 0;
+}
+
+/* Footer */
+
+.view-source {
+  width: 50%;
+  align-self: center;
+  color: #4183c4;
+  font-weight: 300;
+  text-decoration: none;
+  border-top: 1px solid #ddd;
+  margin: 1.3em 0 0;
+  padding: 1em 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em 0 3em 0;
+  text-align: center;
+}
