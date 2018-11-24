@@ -1,6 +1,6 @@
 # MyMenu
 
-This application gives contains a list of restaurants and their menus.
+This application contains a list of restaurants and their menus.
 You can add, delete and edit restaurants and menus.
 
 ## Usage
